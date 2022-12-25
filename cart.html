@@ -1,0 +1,521 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221225205334">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
+                </a>
+            </div>
+            <div class="header__burger">
+                <span>
+
+                </span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list-href">
+                    <li>
+                        <button class="header__btn header__btn__bordered btn__bordered">
+                            <div class="header__btn-img">
+                                <img src="img/svgicons/catalog.svg" alt="catalog">
+                            </div>
+                            Акции
+                        </button>
+                    </li>
+                    <li>
+                        <button class="header__btn btn">
+                            <div class="header__btn-img">
+                                <img src="img/svgicons/sale.svg" alt="sale">
+                            </div>
+                            Каталог
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Эксклюзивные продукты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">Доставка и оплата</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__link">О компании</a>
+                    </li>
+                    <li>
+                        <a href="./contacts.html" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="header__list-icons">
+                    <li>
+                        <a href="#" class="header__icon">
+                            <label>
+                                <div class="header__icon-row">
+                                    <img src="img/svgicons/search.svg" alt="search">
+                                    <p>Поиск</p>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__icon">
+                            <label>
+                                <div class="header__icon-row">
+                                    <div class="header__icon__after header__icon__favorite">
+                                        <img src="img/svgicons/favorite.svg" alt="favorite">
+                                    </div>
+                                    <p>Избранное</p>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./lk.html" class="header__icon">
+                            <label>
+                                <div class="header__icon-row">
+                                    <img src="img/svgicons/user.svg" alt="user">
+                                    <p>Кабинет</p>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cart.html" class="header__icon">
+                            <label>
+                                <div class="header__icon-row">
+                                    <div class="header__icon__after header__icon__cart">
+                                        <img src="img/svgicons/cart.svg" alt="cart">
+                                    </div>
+                                    <p>1 703,30 ₽</p>
+                                </div>
+                            </label>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+        <main class="content">
+            <div class="head-crumbs">
+                <div class="container">
+                    <div class="head-crumbs__row">
+                        <a href="./index.html">Главная</a>
+                        <p>-</p>
+                        <p>Корзина</p>
+                    </div>
+                </div>
+            </div>
+            <section class="cart-header page-header">
+                <div class="container">
+                    <div class="cart-header__row page-header__row">
+                        <div class="cart-header__left page-header__item">
+                            <h1>Корзина</h1>
+                            <a href="#" class="btn__bordered">Вернуться в каталог</a>
+                        </div>
+                        <div class="page-header__item change__item">
+                            <button>
+                                <img src="img/svgicons/delete.svg" alt="delete">
+                                Отменить заказ
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-main page-main">
+                <div class="container">
+                    <div class="page-main__row cart-main__row">
+                        <div class="page-main__content cart-main__content">
+                            <div class="cart-main__notice notice__row">
+                                <div class="notice__img">
+                                    <img src="img/svgicons/info.svg" alt="info">
+                                </div>
+                                <div class="notice__text">
+                                    Стоимость заказа может измениться и будет окончательно известна только после того,
+                                    как мы проверим наличие товара и соберём вашу покупку. Мы свяжемся с вами для
+                                    уточнения деталей заказа.
+                                </div>
+                            </div>
+                            <div class="page-main__inner">
+                                <h3 class="page-main__subtitle cart-main__subtitle">Товары в наличии</h3>
+                                <div class="cart-main__products products__row">
+                                    <div class="products__item">
+                                        <div class="products__info">
+                                            <div class="products__img">
+                                                <picture><source srcset="img/products/sausages-bavar.webp" type="image/webp"><img src="img/products/sausages-bavar.png" alt="sausages-bavar"></picture>
+                                            </div>
+                                            <div class="products__name">
+                                                <p>Сосиски Баварские</p>
+                                                <p>0,36 кг </p>
+                                            </div>
+                                        </div>
+                                        <div class="products__quantity">
+                                            <div class="products__lot">
+                                                <button id="minus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/minus.svg" alt="minus">
+                                                </button>
+                                                <p id="lot">2 шт</p>
+                                                <button id="plus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                            <div class="products__price">
+                                                <p>260 ₽</p>
+                                                <p>130 ₽ за 1 шт.</p>
+                                            </div>
+                                        </div>
+                                        <div class="products__btns">
+                                            <button class="products__btns-like">
+                                                <img src="img/svgicons/like.svg" alt="like">
+                                            </button>
+                                            <button class="products__btns-trash">
+                                                <img src="img/svgicons/trash.svg" alt="trash">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__item">
+                                        <div class="products__info">
+                                            <div class="products__img">
+                                                <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                            </div>
+                                            <div class="products__name">
+                                                <p>Сокраменто</p>
+                                                <p>0,36 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                            </div>
+                                        </div>
+                                        <div class="products__quantity">
+                                            <div class="products__lot">
+                                                <button id="minus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/minus.svg" alt="minus">
+                                                </button>
+                                                <p id="lot">1шт. ~0,7 кг</p>
+                                                <button id="plus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                            <div class="products__price">
+                                                <p>260 ₽</p>
+                                                <p>130 ₽ за 1 шт.</p>
+                                            </div>
+                                        </div>
+                                        <div class="products__btns">
+                                            <button class="products__btns-like">
+                                                <img src="img/svgicons/like.svg" alt="like">
+                                            </button>
+                                            <button class="products__btns-trash">
+                                                <img src="img/svgicons/trash.svg" alt="trash">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__item">
+                                        <div class="products__info">
+                                            <div class="products__img">
+                                                <div class="products__img-sale">Акция</div>
+                                                <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                            </div>
+                                            <div class="products__name">
+                                                <p>Сокраменто</p>
+                                                <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                            </div>
+                                        </div>
+                                        <div class="products__quantity">
+                                            <div class="products__lot">
+                                                <button id="minus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/minus.svg" alt="minus">
+                                                </button>
+                                                <p id="lot">1шт. ~0,7 кг</p>
+                                                <button id="plus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                            <div class="products__price">
+                                                <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                <p>130 ₽ за 1 шт.</p>
+                                            </div>
+                                        </div>
+                                        <div class="products__btns">
+                                            <button class="products__btns-like">
+                                                <img src="img/svgicons/like.svg" alt="like">
+                                            </button>
+                                            <button class="products__btns-trash">
+                                                <img src="img/svgicons/trash.svg" alt="trash">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="page-main__subtitle cart-main__subtitle">Товары по предзаказу (2-4 дня)</h3>
+                                <div class="cart-main__products products__row">
+                                    <div class="products__item">
+                                        <div class="products__info">
+                                            <div class="products__img">
+                                                <picture><source srcset="img/products/sausages-bavar.webp" type="image/webp"><img src="img/products/sausages-bavar.png" alt="sausages-bavar"></picture>
+                                            </div>
+                                            <div class="products__name">
+                                                <p>Сосиски Баварские</p>
+                                                <p>0,36 кг </p>
+                                            </div>
+                                        </div>
+                                        <div class="products__quantity">
+                                            <div class="products__lot">
+                                                <button id="minus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/minus.svg" alt="minus">
+                                                </button>
+                                                <p id="lot">2 шт</p>
+                                                <button id="plus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                            <div class="products__price">
+                                                <p>260 ₽</p>
+                                                <p>130 ₽ за 1 шт.</p>
+                                            </div>
+                                        </div>
+                                        <div class="products__btns">
+                                            <button class="products__btns-like">
+                                                <img src="img/svgicons/like.svg" alt="like">
+                                            </button>
+                                            <button class="products__btns-trash">
+                                                <img src="img/svgicons/trash.svg" alt="trash">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products__item">
+                                        <div class="products__info">
+                                            <div class="products__img">
+                                                <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                            </div>
+                                            <div class="products__name">
+                                                <p>Сокраменто</p>
+                                                <p>0,36 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                            </div>
+                                        </div>
+                                        <div class="products__quantity">
+                                            <div class="products__lot">
+                                                <button id="minus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/minus.svg" alt="minus">
+                                                </button>
+                                                <p id="lot">1шт. ~0,7 кг</p>
+                                                <button id="plus" class="btn__bg products__btn">
+                                                    <img src="img/svgicons/plus.svg" alt="plus">
+                                                </button>
+                                            </div>
+                                            <div class="products__price">
+                                                <p>260 ₽</p>
+                                                <p>130 ₽ за 1 шт.</p>
+                                            </div>
+                                        </div>
+                                        <div class="products__btns">
+                                            <button class="products__btns-like">
+                                                <img src="img/svgicons/like.svg" alt="like">
+                                            </button>
+                                            <button class="products__btns-trash">
+                                                <img src="img/svgicons/trash.svg" alt="trash">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <section class="cart-intresting">
+                                <div class="cart-intresting__row">
+                                    <div class="favorite-lk__item">
+                                        <div class="item__img">
+                                            <picture><source srcset="img/products/sausages-beef.webp" type="image/webp"><img src="img/products/sausages-beef.png" alt="sausages-beef"></picture>
+                                        </div>
+                                        <p class="item__name">Сосиски Молочные</p>
+                                        <p class="item__massa">0,56 кг</p>
+                                        <p class="item__status">В наличии</p>
+                                        <div class="item__buy">
+                                            <p class="item__price">199 ₽</p>
+                                            <button class="item__cart">
+                                                <img src="img/svgicons/cart-lk.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-lk__item">
+                                        <div class="item__img">
+                                            <picture><source srcset="img/products/sausages-beef.webp" type="image/webp"><img src="img/products/sausages-beef.png" alt="sausages-beef"></picture>
+                                        </div>
+                                        <p class="item__name">Сосиски Молочные</p>
+                                        <p class="item__massa">0,56 кг</p>
+                                        <p class="item__status">В наличии</p>
+                                        <div class="item__buy">
+                                            <p class="item__price">199 ₽</p>
+                                            <button class="item__cart">
+                                                <img src="img/svgicons/cart-lk.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-lk__item">
+                                        <div class="item__img">
+                                            <picture><source srcset="img/products/sausages-beef.webp" type="image/webp"><img src="img/products/sausages-beef.png" alt="sausages-beef"></picture>
+                                        </div>
+                                        <p class="item__name">Сосиски Молочные</p>
+                                        <p class="item__massa">0,56 кг</p>
+                                        <p class="item__status">В наличии</p>
+                                        <div class="item__buy">
+                                            <p class="item__price">199 ₽</p>
+                                            <button class="item__cart">
+                                                <img src="img/svgicons/cart-lk.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-lk__item">
+                                        <div class="item__img">
+                                            <picture><source srcset="img/products/sausages-beef.webp" type="image/webp"><img src="img/products/sausages-beef.png" alt="sausages-beef"></picture>
+                                        </div>
+                                        <p class="item__name">Сосиски Молочные</p>
+                                        <p class="item__massa">0,56 кг</p>
+                                        <p class="item__status">В наличии</p>
+                                        <div class="item__buy">
+                                            <p class="item__price">199 ₽</p>
+                                            <button class="item__cart">
+                                                <img src="img/svgicons/cart-lk.svg" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <aside class="page-main__aside cart-main__aside">
+                            <div class="cart-main__aside-item aside">
+                                <label class="cart-aside__input input">
+                                    <input class="custom-input" id="promo" type="text" autocomplete="off">
+                                    <p class="custom-placeholder">Есть промокод?</p>
+                                </label>
+                                <div class="cart-aside__info">
+                                    <div class="cart-aside__info-item cart-aside__massa">
+                                        <p>Общий вес</p>
+                                        <p>~6 кг</p>
+                                    </div>
+                                    <div class="cart-aside__info-item cart-aside__product">
+                                        <p>Товары (9)</p>
+                                        <p>4 172,30 ₽</p>
+                                    </div>
+                                    <div class="cart-aside__info-item cart-aside__sale">
+                                        <p>Скидка на товары</p>
+                                        <p>-74 ₽</p>
+                                    </div>
+                                </div>
+                                <div class="cart-aside__pay">
+                                    <div class="cart-aside__total">
+                                        <p>Итого</p>
+                                        <p>4 098,30 ₽</p>
+                                    </div>
+                                    <a href="#" class="btn__bg cart-aside__btn">Перейти к оформлению</a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="footer__border">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__about">
+                    <a class="footer__tel" href="tel:8 800 100 85 15">8 800 100 85 15</a>
+                    <p class="footer__tel-subtitle">бесплатно по России</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <div class="footer__social__link">
+                                <img src="img/svgicons/inst.svg" alt="inst">
+                            </div>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <div class="footer__social__link">
+                                <img src="img/svgicons/facebook.svg" alt="facebook">
+                            </div>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <div class="footer__social__link">
+                                <img src="img/svgicons/vk.svg" alt="vk">
+                            </div>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <div class="footer__social__link">
+                                <img src="img/svgicons/twitter.svg" alt="twitter">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__address">
+                    <p>spk@rmpr.ru</p>
+                    <p>
+                        Россия, Новосибирск,
+                        ул. Дуси Ковальчук, 1
+                    </p>
+                    <p>
+                        Доставка с 10:00 до 22:00
+                    </p>
+                </div>
+                <nav class="footer__nav nav-footer">
+                    <div class="nav-footer__row">
+                        <div class="nav-footer__item">
+                            <a href="#" class="nav-footer__link">Каталог</a>
+                            <a href="#" class="nav-footer__link">Акции</a>
+                            <a href="#" class="nav-footer__link">Эксклюзивные продукты</a>
+                            <a href="#" class="nav-footer__link">Подарочные наборы</a>
+                            <a href="#" class="nav-footer__link">О компании</a>
+                        </div>
+                        <div class="nav-footer__item">
+                            <a href="#" class="nav-footer__link">Доставка и оплата</a>
+                            <a href="#" class="nav-footer__link">Как сделать заказ</a>
+                            <a href="#" class="nav-footer__link">Отслеживание заказа</a>
+                            <a href="#" class="nav-footer__link">Служба качества</a>
+                            <a href="#" class="nav-footer__link">Контакты</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="footer__email email-footer">
+                    <p class="email-footer__text">
+                        Если у вас есть вопросы, пожелания, комментарии –
+                        вы можете отправить нам сообщение
+                    </p>
+                    <button class="email-footer__btn btn__bg">
+                        <div class="email-footer__btn-img">
+                            <img src="img/svgicons/message.svg" alt="message">
+                        </div>
+                        <p class="email-footer__btn-text">Обратная связь</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy copy-footer">
+        <div class="container">
+            <div class="copy-footer__row">
+                <div class="copy-footer__copy">
+                    <p>
+                        © ООО «Сибирская продовольственная 
+                        компания», 1994 – 2021  
+                    </p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="copy-footer__company">
+                    <span style="color: #12121266;">Разработка сайта – </span>
+                    <span>Евростудио</span>
+                    <div class="copy-footer__company-img">
+                        <img src="img/svgicons/logo-studio.svg" alt="logo-studio">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221225205334"></script>
+    <script src="js/app.min.js?_v=20221225205334"></script>
+</body>
+
+</html>

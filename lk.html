@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221224193034">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221225205334">
     <title>Личный кабинет</title>
 </head>
 
@@ -116,7 +116,7 @@
                         <a href="#" class="header__link">О компании</a>
                     </li>
                     <li>
-                        <a href="#" class="header__link">Контакты</a>
+                        <a href="./contacts.html" class="header__link">Контакты</a>
                     </li>
                 </ul>
                 <ul class="header__list-icons">
@@ -143,7 +143,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="header__icon">
+                        <a href="./lk.html" class="header__icon">
                             <label>
                                 <div class="header__icon-row">
                                     <img src="img/svgicons/user.svg" alt="user">
@@ -153,7 +153,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="header__icon">
+                        <a href="./cart.html" class="header__icon">
                             <label>
                                 <div class="header__icon-row">
                                     <div class="header__icon__after header__icon__cart">
@@ -206,7 +206,7 @@
                                         <use xlink:href="#cart"></use>
                                     </svg>
                                 </div>
-                                <button data-id="orders" class="aside-lk__button">Моя корзина</button>
+                                <a href="./cart.html" class="aside-lk__button">Моя корзина</a>
                             </div>
                             <div class="aside-lk__item">
                                 <div class="aside-lk__img">
@@ -253,42 +253,50 @@
                             <div id="data" class="lk__tabs lk-content__data data-lk">
                                 <h2 class="data-lk__title">Персональные данные</h2>
                                 <form action="#" class="data-lk__form form__row">
-                                    <label class="data-lk__item">
-                                        <input class="data-lk__input" id="firstname" type="text" autocomplete="off"
+                                    <label class="data-lk__item input">
+                                        <input class="data-lk__input custom-input" id="firstname" type="text" autocomplete="off"
                                             required>
-                                        <p class="data-lk__placeholder">Имя и отчество *</p>
+                                        <p class="data-lk__placeholder custom-placeholder">Имя и отчество *</p>
                                     </label>
-                                    <label class="data-lk__item">
-                                        <p class="data-lk__placeholder">Фамилия</p>
-                                        <input class="data-lk__input" id="surname" type="text">
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Фамилия</p>
+                                        <input class="data-lk__input custom-input" id="surname" type="text">
                                     </label>
-                                    <label class="data-lk__item">
-                                        <p class="data-lk__placeholder">Телефон *</p>
-                                        <input class="data-lk__input" id="tel" type="tel" required>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Телефон *</p>
+                                        <input class="data-lk__input custom-input" id="tel" type="tel" required>
                                     </label>
-                                    <label class="data-lk__item">
-                                        <p class="data-lk__placeholder">Email *</p>
-                                        <input class="data-lk__input" id="email" type="email">
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Email *</p>
+                                        <input class="data-lk__input custom-input" id="email" type="email">
                                     </label>
-                                    <input class="data-lk__input" type="date" name="" id="">
+                                    <input class="data-lk__input custom-input" type="date" name="" id="">
                                     <div class="data-lk__checkboxes">
-                                        <label class="data-lk__checkbox"><input type="radio" name="sex"
-                                                value="male">Мужской</label>
-                                        <label class="data-lk__checkbox"><input type="radio" name="sex"
-                                                value="female">Женский</label>
+                                        <label class="data-lk__checkbox radio">
+                                            <input class="custom-radio" type="radio" name="sex" value="male">
+                                            <p>Мужской</p>
+                                        </label>
+                                        <label class="data-lk__checkbox radio">
+                                            <input class="custom-radio" type="radio" name="sex" value="female">
+                                            <p>Женский</p>
+                                        </label>
                                     </div>
                                     <div class="data-lk__notification notification-lk">
                                         <a href="#" class="btn__bordered notification-lk__btn">Изменить пароль</a>
                                         <h3 class="data-lk__subtitle">Уведомления</h3>
-                                        <div class="notification-lk__checkboxes">
-                                            <label><input id="service-notification" type="checkbox">Сервисные
-                                                уведомления</label>
-                                            <label><input id="new-notification" type="checkbox">Уведомления о новых
-                                                продуктах и акциях</label>
+                                        <div class="notification-lk__checkboxes ">
+                                            <label class="checkbox">
+                                                <input class="custom-checkbox" id="service-notification" type="checkbox">
+                                                <p>Сервисные уведомления</p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input class="custom-checkbox" id="new-notification" type="checkbox">
+                                                <p>Уведомления о новых продуктах и акциях</p>
+                                            </label>
                                         </div>
                                         <div class="notification-lk__btns">
-                                            <button class="btn__bordered">Отменить</button>
-                                            <button class="btn__bg">Сохранить изменения</button>
+                                            <button type="reset" class="btn__bordered">Отменить</button>
+                                            <button type="submit" class="btn__bg">Сохранить изменения</button>
                                         </div>
                                     </div>
                                 </form>
@@ -299,7 +307,7 @@
                                     <label class="address-lk__checkbox checkbox-address">
                                         <div class="checkbox-address__row">
                                             <div class="checkbox-address__header">
-                                                <input type="radio" name="address"></input>
+                                                <input type="radio" value="address1" name="address"></input>
                                                 <p>Россия, Новосибирск, ул. Гнесиных, 10/1, 1101</p>
                                             </div>
                                             <div class="checkbox-address__btns">
@@ -317,7 +325,7 @@
                                     <label class="address-lk__checkbox checkbox-address">
                                         <div class="checkbox-address__row">
                                             <div class="checkbox-address__header">
-                                                <input type="radio" name="address"></input>
+                                                <input type="radio" value="address2" name="address"></input>
                                                 <p>Россия, Новосибирск, ул. Российская, 10, 255</p>
                                             </div>
                                             <div class="checkbox-address__btns">
@@ -335,7 +343,7 @@
                                     <label class="address-lk__checkbox checkbox-address">
                                         <div class="checkbox-address__row">
                                             <div class="checkbox-address__header">
-                                                <input type="radio" name="address"></input>
+                                                <input type="radio" value="address3" name="address"></input>
                                                 <p>Россия, Новосибирск, ул. Арбузова, 8, 19</p>
                                             </div>
                                             <div class="checkbox-address__btns">
@@ -360,7 +368,7 @@
                                         <div class="order-lk__order-header header-order-lk">
                                             <div class="header-order-lk__row">
                                                 <div class="header-order-lk__info">
-                                                    <button data-id="order">
+                                                    <button data-id="order" class="btn-order">
                                                         <p>№2565425631</p>
                                                     </button>
                                                     <span>от 15.11.2021</span>
@@ -376,7 +384,7 @@
                                         </div>
                                         <div class="order-lk__order-change">
                                             <div class="change__item">
-                                                <button><img src="img/svgicons/edit-lk.svg"
+                                                <button data-id="order" class="btn-order"><img src="img/svgicons/edit-lk.svg"
                                                         alt="edit">Редактировать</button>
                                             </div>
                                             <div class="change__item">
@@ -569,9 +577,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -583,9 +591,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -597,9 +605,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -611,9 +619,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -625,9 +633,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -639,9 +647,9 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="favorite-lk__item">
@@ -653,21 +661,61 @@
                                         <p class="item__status">В наличии</p>
                                         <div class="item__buy">
                                             <p class="item__price">199 ₽</p>
-                                            <div class="item__cart">
+                                            <button class="item__cart">
                                                 <img src="img/svgicons/cart-lk.svg" alt="">
-                                            </div>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="bonus" class="lk__tabs lk-content__bonus favorite-bonus">
+                            <div id="bonus" class="lk__tabs lk-content__bonus bonus-lk">
                                 <h2 class="data-lk__title">Доступные промокоды и скидки</h2>
-                                .favorite-bonus__row    
+                                <div class="bonus-lk__row">
+                                    <div class="bonus-lk__item">
+                                        <h3>Индивидуальная скидка 5%</h3>
+                                        <p>Дарим персональную скидку на все товары в категории Сосиски и сардельки по промокоду <span>SOSSPK</span></p>
+                                        <button class="btn__bordered bonus-lk__btn">Скопировать код</button>
+                                        <picture><source srcset="img/lk/present.webp" type="image/webp"><img src="img/lk/present.png" alt="present"></picture>
+                                    </div>
+                                    <div class="bonus-lk__item">
+                                        <h3>Бесплатная доставка при заказе от 1000 ₽</h3>
+                                        <p>Оформите заказ на сумму от 1000 ₽ и примените промокод <span>DOM1000</span></p>
+                                        <button class="btn__bordered bonus-lk__btn">Скопировать код</button>
+                                        <picture><source srcset="img/lk/delivery.webp" type="image/webp"><img src="img/lk/delivery.png" alt="delivery"></picture>
+                                    </div>
+                                </div>  
                             </div>
-                            <div id="callback" class="lk__tabs lk-content__callback callback-bonus">
-                                <h3>Обратная связб</h3>
+                            <div id="callback" class="lk__tabs lk-content__callback callback-lk">
+                                <div class="callback-lk__row">
+                                    <h2 class="data-lk__title">Напишите нам</h2>
+                                    <p class="callback-lk__subtitle">Вы можете оставить нам сообщение. Мы ответим как можно скорее удобным для вас способом.</p>
+                                    <form action="#" class="callback-lk__form">
+                                        <div class="select">
+                                            <select name="select">
+                                                <option selected value="s1">Позвоните мне по телефону</option>
+                                                <option value="s2">Вариант 1</option>
+                                                <option value="s3">Вариант 2</option>
+                                                <option value="s4">Вариант 3</option>
+                                            </select>
+                                        </div>
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Телефон *</p>
+                                            <input class="data-lk__input custom-input" id="tel" type="tel" required>
+                                        </label>
+                                        <textarea class="callback-lk__textarea" placeholder="Сообщение" name="callback-lk-textarea" id="callback-lk-textarea"></textarea>
+                                        <label class="file">
+                                            <input class="custom-file" name="file" type="file">
+                                            Прикрепить файл
+                                            <img src="img/svgicons/clip.svg" alt="clip">
+                                        </label>
+                                        <button class="btn__bg callback-lk__btn" type="submit">Отправить сообщение</button>
+                                    </form>
+                                    <p class="callback-lk__notice">
+                                        Нажимая на кнопку вы даёте согласие на сбор 
+                                        и обработку <a href="#">персональных данных.</a>
+                                    </p>
+                                </div>
                             </div>
-
                             <!-- <div id="add-address" class="lk-content__add-address add-address-lk">
 
                                 <button data-id="go-to-address" class="btn__bordered add-address-lk__btn">&lt; Все адреса</button>
@@ -675,59 +723,59 @@
                                 <form action="#">
                                     <h3 class="add-address-lk__subtitle">Адрес доставки</h3>
                                     <div class="add-address-lk__form form__row">
-                                        <label class="data-lk__item">
-                                            <input class="data-lk__input" id="city" type="text" autocomplete="off" required>
-                                            <p class="data-lk__placeholder">Город *</p>
+                                        <label class="data-lk__item input">
+                                            <input class="data-lk__input custom-input" id="city" type="text" autocomplete="off" required>
+                                            <p class="data-lk__placeholder custom-placeholder">Город *</p>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Улица *</p>
-                                            <input class="data-lk__input" id="address" type="text" required>
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Улица *</p>
+                                            <input class="data-lk__input custom-input" id="address" type="text" required>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Дом *</p>
-                                            <input class="data-lk__input" id="house" type="text" required>
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Дом *</p>
+                                            <input class="data-lk__input custom-input" id="house" type="text" required>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Корпус</p>
-                                            <input class="data-lk__input" id="corpus" type="text">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Корпус</p>
+                                            <input class="data-lk__input custom-input" id="corpus" type="text">
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Квартира/офис *</p>
-                                            <input class="data-lk__input" id="flat" type="text" required>
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Квартира/офис *</p>
+                                            <input class="data-lk__input custom-input" id="flat" type="text" required>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Домофон</p>
-                                            <input class="data-lk__input" id="intercom" type="text">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Домофон</p>
+                                            <input class="data-lk__input custom-input" id="intercom" type="text">
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Подъезд</p>
-                                            <input class="data-lk__input" id="entrance" type="text">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Подъезд</p>
+                                            <input class="data-lk__input custom-input" id="entrance" type="text">
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Этаж</p>
-                                            <input class="data-lk__input" id="floor" type="text">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Этаж</p>
+                                            <input class="data-lk__input custom-input" id="floor" type="text">
                                         </label>
                                         <textarea name="comment" id="cooment" class="data-lk__textarea"
                                             placeholder="Ваш комментарий для курьера"></textarea>                           
                                     </div class="add-address-lk__subtitle">
                                     <h3 class="add-address-lk__subtitle">Персональные данные</h3>
                                     <div class="add-address-lk__form form__row">
-                                        <label class="data-lk__item">
-                                            <input class="data-lk__input" id="firstname" type="text" autocomplete="off"
+                                        <label class="data-lk__item input">
+                                            <input class="data-lk__input custom-input" id="firstname" type="text" autocomplete="off"
                                                 required>
-                                            <p class="data-lk__placeholder">Имя и отчество *</p>
+                                            <p class="data-lk__placeholder custom-placeholder">Имя и отчество *</p>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Фамилия</p>
-                                            <input class="data-lk__input" id="surname" type="text">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Фамилия</p>
+                                            <input class="data-lk__input custom-input" id="surname" type="text">
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Телефон *</p>
-                                            <input class="data-lk__input" id="tel" type="tel" required>
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Телефон *</p>
+                                            <input class="data-lk__input custom-input" id="tel" type="tel" required>
                                         </label>
-                                        <label class="data-lk__item">
-                                            <p class="data-lk__placeholder">Email *</p>
-                                            <input class="data-lk__input" id="email" type="email">
+                                        <label class="data-lk__item input">
+                                            <p class="data-lk__placeholder custom-placeholder">Email *</p>
+                                            <input class="data-lk__input custom-input" id="email" type="email">
                                         </label>
                                         <div class="notification-lk__btns">
                                             <button class="btn__bordered">Отменить</button>
@@ -737,9 +785,9 @@
                                 </form>
                             </div> -->
 
-                            <!-- <div id="order" class="order">
+                            <div id="order" class="order">
                                 <div class="order__row">
-                                    <button data-id="go-to-orders" class="btn__bordered add-address-lk__btn">&lt; Все заказы</button>
+                                    <button id="go-to-order" class="btn__bordered add-address-lk__btn">&lt; Все заказы</button>
                                     <div class="order__header header-order">
                                         <div class="header-order__top">
                                             <h2>Заказ №<span id="order-num">2565425631</span><span id="order-date"> от 15.11.2021</span></h2>
@@ -759,11 +807,11 @@
                                         <div class="main-order__btns">
                                             <div class="main-order__address">
                                                 <p>Адрес доставки</p>
-                                                <button><span>Новосибирск, ул. Гнесиных, 10/1, 1101</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
+                                                <button id="go-to-change-address"><span>Новосибирск, ул. Гнесиных, 10/1, 1101</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
                                             </div>
                                             <div class="main-order__time">
                                                 <p>Время доставки</p>
-                                                <button><span>15 ноября с 10 до 16 часов</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
+                                                <button id="go-to-change-time"><span>15 ноября с 10 до 16 часов</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
                                             </div>
                                         </div>
                                         <div class="main-order__info info-order">
@@ -801,10 +849,137 @@
                                         </div>
                                     </div>
                                     <div class="order__structure structure-order">
-                                        <h3>Состав заказа</h3>
+                                        <h3 class="structure-order__title">Информация о заказе</h3>
+                                        <div class="cart-main__products ordering__row">
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <picture><source srcset="img/products/sausages-bavar.webp" type="image/webp"><img src="img/products/sausages-bavar.png" alt="sausages-bavar"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сосиски Баварские</p>
+                                                        <p>0,36 кг </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">2 шт</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p>260 ₽</p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>0,36 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">2 шт</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p>260 ₽</p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <div class="products__img-sale">Акция</div>
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">1 шт. ~1 кг</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
+                            <div class="change-time" id="change-time">
+                                <button id="go-back" class="btn__bordered add-address-lk__btn">&lt; Назад</button>
+                                <form action="#" class="order-main__form form__row">
+                                    <h3 class="page-main__subtitle order-main__subtitle">Измение времени доставки</h3>
+                                    <input class="data-lk__input custom-input" type="date" name="" id="">
+                                    <div class="select">
+                                        <select name="select">
+                                            <option selected="" value="s1">с 10 до 14 часов</option>
+                                            <option value="s2">Вариант 1</option>
+                                            <option value="s3">Вариант 2</option>
+                                            <option value="s4">Вариант 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="notification-lk__btns">
+                                        <button type="reset" class="btn__bordered">Отменить</button>
+                                        <button type="submit" class="btn__bg">Сохранить изменения</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="change-address" id="change-address">
+                                <button id="go-back" class="btn__bordered add-address-lk__btn">&lt; Назад</button>
+                                <form action="#" class="order-main__form form__row">
+                                    <h3 class="page-main__subtitle order-main__subtitle">Измения адреса доставки</h3>
+                                    <div class="select">
+                                        <select name="select">
+                                            <option selected="" value="s1">Новосибирск</option>
+                                            <option value="s2">Вариант 1</option>
+                                            <option value="s3">Вариант 2</option>
+                                            <option value="s4">Вариант 3</option>
+                                        </select>
+                                    </div>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Улица *</p>
+                                        <input class="data-lk__input custom-input" id="street" type="text" required="">
+                                    </label>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Дом *</p>
+                                        <input class="data-lk__input custom-input" id="house" type="text" required="">
+                                    </label>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Корпус</p>
+                                        <input class="data-lk__input custom-input" id="courpus" type="text">
+                                    </label>
+                                    <label class="data-lk__item input input__flex">
+                                        <p class="data-lk__placeholder custom-placeholder">Квартира/офис *</p>
+                                        <input class="data-lk__input custom-input input__short" id="flat" type="text" required="">
+                                        <label class="checkbox">
+                                            <input class="custom-checkbox" id="service-notification" type="checkbox">
+                                            <p>Частный дом</p>
+                                        </label>
+                                    </label>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Домофон</p>
+                                        <input class="data-lk__input custom-input" id="intercom" type="text">
+                                    </label>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Подъезд</p>
+                                        <input class="data-lk__input custom-input" id="entrance" type="text">
+                                    </label>
+                                    <label class="data-lk__item input">
+                                        <p class="data-lk__placeholder custom-placeholder">Этаж</p>
+                                        <input class="data-lk__input custom-input" id="floor" type="text">
+                                    </label>
+                                    <textarea name="comment" id="cooment" class="data-lk__textarea" placeholder="Ваш комментарий для курьера"></textarea>    
+                                    <div class="notification-lk__btns">
+                                        <button type="reset" class="btn__bordered">Отменить</button>
+                                        <button type="submit" class="btn__bg">Сохранить изменения</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -905,8 +1080,8 @@
     </div>
 </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221224193034"></script>
-    <script src="js/app.min.js?_v=20221224193034"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221225205334"></script>
+    <script src="js/app.min.js?_v=20221225205334"></script>
 </body>
 
 </html>
