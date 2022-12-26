@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20221225234736">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221226191437">
     <title>Личный кабинет</title>
 </head>
 
@@ -241,6 +241,10 @@
                     <img src="img/svgicons/logo.svg" class="header__logo-img" alt="header-logo">
                 </a>
             </div>
+            <form action="#" class="header__search">
+                <img src="img/svgicons/search.svg" alt="search">
+                <input type="search" placeholder="Поиск по сайту">
+            </form>
             <div class="header__burger">
                 <span>
 
@@ -379,7 +383,7 @@
                                         <use xlink:href="#bonus"></use>
                                     </svg>
                                 </div>
-                                <button data-id="bonus" class="aside-lk__button">Бонусы</button>
+                                <button data-id="bonus" class="aside-lk__button aside-lk__item__after">Бонусы</button>
                             </div>
                             <div class="aside-lk__item aside-lk__item__bordered">
                                 <div class="aside-lk__img">
@@ -908,9 +912,218 @@
                                     </p>
                                 </div>
                             </div>
-                            <!-- <div id="add-address" class="lk-content__add-address add-address-lk">
+                            <div id="order" class="order">
+                                <div class="order__row">
+                                    <button id="go-to-order" class="btn__bordered add-address-lk__btn">&lt; Все заказы</button>
+                                    <div class="order__header header-order">
+                                        <div class="header-order__top">
+                                            <h2>Заказ №<span id="order-num">2565425631</span><span id="order-date"> от 15.11.2021</span></h2>
+                                            <p id="price">1 703,30 ₽</p>
+                                        </div>
+                                        <div class="header-order__bottom">
+                                            <p class="header-order__status">Собран</p>
+                                            <div class="header-order__btns">
+                                                <button><img src="img/svgicons/delete.svg" alt="delete">Отменить
+                                                    заказ</button>
+                                                <a href="#" class="btn__bg header-order-lk__buy">Оплатить онлайн</a>
+                                                <a href="#" class="btn__bordered header-order-lk__repeat">Повторить заказ</a>
+                                            </div>
+                                        </div>
+                                        <div class="header-order__bottom header-order__bottom__mobile">
+                                            <div class="flex">
+                                                <p class="header-order__status">Собран</p>
+                                                <button><img src="img/svgicons/delete.svg" alt="delete">Отменить заказ</button>
+                                            </div>
+                                            <div class="header-order__btns">
+                                                <a href="#" class="btn__bg header-order-lk__buy">Оплатить онлайн</a>
+                                                <a href="#" class="btn__bordered header-order-lk__repeat">Повторить заказ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__main main-order">
+                                        <div class="main-order__btns">
+                                            <div class="main-order__address">
+                                                <p>Адрес доставки</p>
+                                                <button id="go-to-change-address"><span>Новосибирск, ул. Гнесиных, 10/1, 1101</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
+                                            </div>
+                                            <div class="main-order__time">
+                                                <p>Время доставки</p>
+                                                <button id="go-to-change-time"><span>15 ноября с 10 до 16 часов</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="main-order__info info-order">
+                                            <h3>Информация о заказе</h3>
+                                            <div class="ordering-description__row">
+                                                <div class="ordering-description__items">
+                                                    <div class="ordering-description__item">
+                                                        <p>Получатель</p>
+                                                        <p>Александровский Константин</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Время доставки</p>
+                                                        <p>Сегодня (9 ноября) с 10 до 14 часов</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Адрес доставки</p>
+                                                        <p>Новосибирск, улица Гнесиных, дом 10/1, квартира/офис 1101</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Номер заказа</p>
+                                                        <p>11256478</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Общий вес</p>
+                                                        <p>~3,1 кг</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Стоимость доставки</p>
+                                                        <p class="free">Бесплатно</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Товары (6)</p>
+                                                        <p>1 777,30 ₽</p>
+                                                    </div>
+                                                    <div class="ordering-description__item">
+                                                        <p>Скидка на товары</p>
+                                                        <p class="sale">-74 ₽</p>
+                                                    </div>
+                                                </div>
+                                                <div class="ordering-description__total">
+                                                    <p>Итого</p>
+                                                    <p>1 703,30 ₽</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__structure structure-order">
+                                        <h3 class="structure-order__title">Информация о заказе</h3>
+                                        <div class="cart-main__products ordering__row">
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <picture><source srcset="img/products/sausages-bavar.webp" type="image/webp"><img src="img/products/sausages-bavar.png" alt="sausages-bavar"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сосиски Баварские</p>
+                                                        <p>0,36 кг </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">2 шт</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p>260 ₽</p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>0,36 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">2 шт</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p>260 ₽</p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ordering__item">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <div class="products__img-sale">Акция</div>
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
+                                                    </div>
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product__lot">
+                                                    <p id="lot">1 шт. ~1 кг</p>
+                                                </div>
+                                                <div class="products__price">
+                                                    <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                    <p>130 ₽ за 1 шт.</p>
+                                                </div>
+                                            </div>
+                                            <div class="products__item__mobile">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <div class="products__img-sale">Акция</div>
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture></picture>
+                                                    </div>
+                                                </div>
+                                                <div id="flex">
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                        <p id="lot">1шт. ~0,7 кг</p>
+                                                    </div>
+                                                    <div class="products__flex">
+                                                        <div class="products__price">
+                                                            <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                            <p>130 ₽ за 1 шт.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="products__item__mobile">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <div class="products__img-sale">Акция</div>
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture></picture>
+                                                    </div>
+                                                </div>
+                                                <div id="flex">
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                        <p id="lot">1шт. ~0,7 кг</p>
+                                                    </div>
+                                                    <div class="products__flex">
+                                                        <div class="products__price">
+                                                            <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                            <p>130 ₽ за 1 шт.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="products__item__mobile">
+                                                <div class="products__info">
+                                                    <div class="products__img">
+                                                        <div class="products__img-sale">Акция</div>
+                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture></picture>
+                                                    </div>
+                                                </div>
+                                                <div id="flex">
+                                                    <div class="products__name">
+                                                        <p>Сокраменто</p>
+                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
+                                                        <p id="lot">1шт. ~0,7 кг</p>
+                                                    </div>
+                                                    <div class="products__flex">
+                                                        <div class="products__price">
+                                                            <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
+                                                            <p>130 ₽ за 1 шт.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <button data-id="go-to-address" class="btn__bordered add-address-lk__btn">&lt; Все адреса</button>
+                            <div id="add-address" class="lk-content__add-address add-address-lk">
+
+                                <button id="go-to-address" class="btn__bordered add-address-lk__btn">&lt; Все адреса</button>
                                 <h2 class="data-lk__title">Россия, Новосибирск, ул. Гнесиных, 10/1, 1101</h2>
                                 <form action="#">
                                     <h3 class="add-address-lk__subtitle">Адрес доставки</h3>
@@ -975,132 +1188,6 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div> -->
-
-                            <div id="order" class="order">
-                                <div class="order__row">
-                                    <button id="go-to-order" class="btn__bordered add-address-lk__btn">&lt; Все заказы</button>
-                                    <div class="order__header header-order">
-                                        <div class="header-order__top">
-                                            <h2>Заказ №<span id="order-num">2565425631</span><span id="order-date"> от 15.11.2021</span></h2>
-                                            <p id="price">1 703,30 ₽</p>
-                                        </div>
-                                        <div class="header-order__bottom">
-                                            <p class="header-order__status">Собран</p>
-                                            <div class="header-order__btns">
-                                                <button><img src="img/svgicons/delete.svg" alt="delete">Отменить
-                                                    заказ</button>
-                                                <a href="#" class="btn__bg header-order-lk__buy">Оплатить онлайн</a>
-                                                <a href="#" class="btn__bordered header-order-lk__repeat">Повторить заказ</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="order__main main-order">
-                                        <div class="main-order__btns">
-                                            <div class="main-order__address">
-                                                <p>Адрес доставки</p>
-                                                <button id="go-to-change-address"><span>Новосибирск, ул. Гнесиных, 10/1, 1101</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
-                                            </div>
-                                            <div class="main-order__time">
-                                                <p>Время доставки</p>
-                                                <button id="go-to-change-time"><span>15 ноября с 10 до 16 часов</span><img src="img/svgicons/edit-lk.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                        <div class="main-order__info info-order">
-                                            <h3>Информация о заказе</h3>
-                                            <div class="info-order__row">
-                                                <div class="info-order__item">
-                                                    <div class="info-order__left">
-                                                        <p>Получатель</p>
-                                                        <p>Телефон</p>
-                                                        <p>Email</p>
-                                                    </div>
-                                                    <div class="info-order__right">
-                                                        <p>Александровский Константин</p>
-                                                        <p>+7 963 955 33 25</p>
-                                                        <p>mailkos@mail.ru</p>
-                                                    </div>
-                                                </div>
-                                                <div class="info-order__item">
-                                                    <div class="info-order__left">
-                                                        <p>Общий вес</p>
-                                                        <p>Стоимость доставки</p>
-                                                        <p>Товары <span>(6)</span></p>
-                                                        <p>Скидка на товары</p>
-                                                        <p>Итого</p>
-                                                    </div>
-                                                    <div class="info-order__right">
-                                                        <p>~3,1 кг</p>
-                                                        <p>Бесплатно</p>
-                                                        <p>1 777,30 ₽</p>
-                                                        <p>-74 ₽</p>
-                                                        <p>1 703,30 ₽</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="order__structure structure-order">
-                                        <h3 class="structure-order__title">Информация о заказе</h3>
-                                        <div class="cart-main__products ordering__row">
-                                            <div class="ordering__item">
-                                                <div class="products__info">
-                                                    <div class="products__img">
-                                                        <picture><source srcset="img/products/sausages-bavar.webp" type="image/webp"><img src="img/products/sausages-bavar.png" alt="sausages-bavar"></picture>
-                                                    </div>
-                                                    <div class="products__name">
-                                                        <p>Сосиски Баварские</p>
-                                                        <p>0,36 кг </p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__lot">
-                                                    <p id="lot">2 шт</p>
-                                                </div>
-                                                <div class="products__price">
-                                                    <p>260 ₽</p>
-                                                    <p>130 ₽ за 1 шт.</p>
-                                                </div>
-                                            </div>
-                                            <div class="ordering__item">
-                                                <div class="products__info">
-                                                    <div class="products__img">
-                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
-                                                    </div>
-                                                    <div class="products__name">
-                                                        <p>Сокраменто</p>
-                                                        <p>0,36 кг <img src="img/svgicons/question.svg" alt=""> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__lot">
-                                                    <p id="lot">2 шт</p>
-                                                </div>
-                                                <div class="products__price">
-                                                    <p>260 ₽</p>
-                                                    <p>130 ₽ за 1 шт.</p>
-                                                </div>
-                                            </div>
-                                            <div class="ordering__item">
-                                                <div class="products__info">
-                                                    <div class="products__img">
-                                                        <div class="products__img-sale">Акция</div>
-                                                        <picture><source srcset="img/products/socramento.webp" type="image/webp"><img src="img/products/socramento.png" alt="socramentor"></picture>
-                                                    </div>
-                                                    <div class="products__name">
-                                                        <p>Сокраменто</p>
-                                                        <p>~0,7 кг <img src="img/svgicons/question.svg" alt=""> </p>
-                                                    </div>
-                                                </div>
-                                                <div class="product__lot">
-                                                    <p id="lot">1 шт. ~1 кг</p>
-                                                </div>
-                                                <div class="products__price">
-                                                    <p class="new-price">260 ₽ <span class="old-price">525 ₽/кг</span></p>
-                                                    <p>130 ₽ за 1 шт.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="change-time" id="change-time">
                                 <button id="go-back" class="btn__bordered add-address-lk__btn">&lt; Назад</button>
@@ -1361,8 +1448,8 @@
     </div>
 </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221225234736"></script>
-    <script src="js/app.min.js?_v=20221225234736"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20221226191437"></script>
+    <script src="js/app.min.js?_v=20221226191437"></script>
 </body>
 
 </html>
